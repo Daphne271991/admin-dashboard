@@ -24,10 +24,9 @@ const DataTable = (props: Props) => {
   // //   }
   // // });
 
-  const handleDelete = (id: number) => {
+  const handleDelete = (params: any) => {
     //delete the item
     // mutation.mutate(id)
-    const id = params.row.id;
   };
 
   const actionColumn: GridColDef = {
