@@ -1,3 +1,5 @@
+@import "../../styles/responsive.scss";
+
 .navbar {
   width: 100%;
   padding: 20px;
@@ -11,14 +13,20 @@
     font-weight: bold;
     gap: 10px;
   }
-
   .icons {
     display: flex;
     align-items: center;
     gap: 20px;
 
+    .icon {
+      @include sm {
+        display: none;
+      }
+    }
+
     .notification {
       position: relative;
+
       span {
         background-color: red;
         color: white;
@@ -39,6 +47,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
+
       img {
         width: 26px;
         height: 26px;
