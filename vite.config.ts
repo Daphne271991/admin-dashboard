@@ -1,7 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+const path = require("path");
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+module.exports = {
+  plugins: [
+    // other plugins
+  ],
+  build: {
+    target: "esnext",
+    minify: true,
+    assetsDir: "dist",
+    css: ["./src/assets/styles/main.scss", "./src/pages/users/Users.scss"],
+  },
+};
