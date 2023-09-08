@@ -6,7 +6,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import "./bigChartBox.scss";
+import "./BigChartBox.scss";
 
 const data = [
   {
