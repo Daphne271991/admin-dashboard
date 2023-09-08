@@ -24,7 +24,7 @@ const DataTable = (props: Props) => {
   // //   }
   // // });
 
-  const handleDelete = () => {
+  const handleDelete = (id: number) => {
     //delete the item
     // mutation.mutate(id)
   };
@@ -39,7 +39,8 @@ const DataTable = (props: Props) => {
           <Link to={`/${props.slug}/${params.row.id}`}>
             <img src="/view.svg" alt="" />
           </Link>
-          <div className="delete" onClick={() => handleDelete(params.row)}>
+
+          <div className="delete" onClick={() => handleDelete(params.row.id)}>
             <img src="/delete.svg" alt="" />
           </div>
         </div>
